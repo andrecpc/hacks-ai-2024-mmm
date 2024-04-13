@@ -1,0 +1,24 @@
+# Создание окружения
+python -m venv cp_env
+
+# Активация окружения
+cp_env\Scripts\activate.bat
+
+# Установка пакетов
+pip install streamlit
+
+pip install torch
+
+pip install -U scikit-learn
+
+pip install pandas matplotlib plotly
+
+pip install altair==4.2.2
+
+pip install openpyxl
+
+# Переход в папку приложени
+cd app
+
+# Запуск проекта
+streamlit run app.py
