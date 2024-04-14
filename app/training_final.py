@@ -132,12 +132,20 @@ class SalesForecast(nn.Module):
         self.layer2 = nn.Linear(100, 50)
         self.batchnorm2 = nn.BatchNorm1d(50)
         self.output_layer = nn.Linear(50, n_future)
+        self.dropout = nn.Dropout(p=0.2)
 
     def forward(self, x):
+        # print(x.size())
         x = x.view(x.size(0), -1)
+        # print(x.size())
         x = self.relu(self.batchnorm1(self.layer1(x)))
+        x = self.dropout(x)
+        # print(x.size())
         x = self.relu(self.batchnorm2(self.layer2(x)))
+        x = self.dropout(x)
+        # print(x.size())
         x = self.output_layer(x)
+        # print(x.size())
         return x
 
 input_dim = len(features)
