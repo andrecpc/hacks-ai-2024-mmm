@@ -23,6 +23,7 @@ SalesForecast(
   (layer2): Linear(in_features=100, out_features=50, bias=True)
   (batchnorm2): BatchNorm1d(50, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
   (output_layer): Linear(in_features=50, out_features=29, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
 )
 ```
 
