@@ -33,5 +33,7 @@ SalesForecast(
 
 [Видео демонстрация](https://drive.google.com/file/d/1q2_rvG7_FH5F0aHCG2S1r0F3iFj-C6tt/view?usp=sharing)
 
+Другой скринкаст https://drive.google.com/file/d/1y7y_3wMUDV-SAR7hGosp8gbKAww--IZh/view?usp=sharing
+
 Скриншот приложения
 ![Скриншот приложения](https://github.com/andrecpc/hacks-ai-2024-mmm/blob/main/demo.png)
